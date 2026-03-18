@@ -222,10 +222,41 @@ export default function Home() {
         )}
       </div>
 
+      {/* CTA Banner */}
+      <section className="mx-auto max-w-4xl px-4 pb-16">
+        <a
+          href="https://competitor-monitor-flame.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-2xl border border-primary/20 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 p-8 text-center transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+        >
+          <p className="mb-2 text-lg font-semibold text-foreground">
+            Want ongoing competitor monitoring?
+          </p>
+          <p className="mb-4 text-sm text-muted-foreground">
+            CompetitorIQ tracks your competitors&apos; tech stacks, pricing, features, and more &mdash; automatically, every day.
+          </p>
+          <span className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground">
+            Try CompetitorIQ &rarr;
+          </span>
+        </a>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-border/50 py-6 text-center text-xs text-muted-foreground">
         Stack Explorer &mdash; Free tech stack checker. Detects 50+
         technologies including frameworks, hosting, analytics, and payments.
+        <p className="mt-2">
+          <a
+            href="https://competitor-monitor-flame.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline-offset-4 hover:underline"
+          >
+            CompetitorIQ
+          </a>
+          {" "}&mdash; AI-powered competitor monitoring
+        </p>
       </footer>
     </div>
   );
